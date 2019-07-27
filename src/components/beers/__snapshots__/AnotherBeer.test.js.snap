@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders another beer button 1`] = `
+<div
+  data-testid="anotherBeerBtn"
+>
+  <button
+    class="btn"
+  >
+    Another Beer
+  </button>
+</div>
+`;

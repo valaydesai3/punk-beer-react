@@ -1,33 +1,195 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  background-color: #006080;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Random Beer Card */
+.card-title {
+  padding-left: 50px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: minmax(150px, auto);
+  grid-gap: 0.5em;
+}
+
+.card-grid-img {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.card-grid-img img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-grid-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-grid-name {
+  font-weight: bold;
+}
+
+.card-grid-tagline {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-grid-buttons {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.btn {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #008cba;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 5px 0 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Cards */
+.card {
+  padding: 1rem;
+  border: #ccc 1px dotted;
+  margin: 0.7rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Search Form */
+.searchBeerForm {
+  padding: 1em 0 1em 0;
+}
+
+input[type='radio'] {
+  margin-right: 5px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 200px auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-gap: 1em;
+}
+
+.search-box {
+  height: 100%;
+  border: #ccc 1px dotted;
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+}
+
+.search-by {
+  border: #ccc 1px dotted;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-by label {
+  margin: 10px;
+}
+
+.search-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Search Results */
+.beer-item {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 150px auto;
+  grid-row-gap: 3em;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 5vw;
   }
-  to {
-    transform: rotate(360deg);
+  .card-grid {
+    display: block;
+  }
+  .card-grid-img {
+    height: 200px;
+    padding: 10px;
+  }
+  .card-grid-body {
+    padding: 10px;
+  }
+  .card-grid-buttons {
+    text-align: center;
+  }
+  .form-grid,
+  .beer-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .search-button {
+    display: flex;
+    justify-content: flex-start;
   }
 }

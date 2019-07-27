@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders non-alocholic beer button 1`] = `
+<div
+  data-testid="nonAlcoBeerBtn"
+>
+  <button
+    class="btn"
+  >
+    Rnadom non-alcoholic beer
+  </button>
+</div>
+`;

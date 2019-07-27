@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders beers component with beers found 1`] = `
+<div
+  data-testid="searchResults"
+>
+  <h3>
+    Search Results for "
+    test
+    "
+  </h3>
+  <div
+    class="card beer-item"
+    data-testid="beerItem"
+  >
+    <div
+      class="card-grid-img"
+    >
+      <img
+        alt="Beer"
+        src="https://images.punkapi.com/v2/124.png"
+      />
+    </div>
+    <div
+      class="card-grid-body"
+    >
+      <p
+        class="card-grid-name"
+      >
+        Chaos Theory
+      </p>
+      <p
+        class="card-grid-description"
+      >
+        Chaos Theory is the most under- rated achievement of 20th Century science. This beer can only aspire to parallel to the mathematical use of the word chaos, which is at odds to the common parlance. The purest showcase of the magnificent hop that is Nelson Sauvin; grapefruit, pineapple and caramel sing above the chaos of life.
+      </p>
+      <p
+        class="card-grid-tagline"
+      >
+        Predictably Random IPA.
+        <span>
+          10/2008
+        </span>
+        <span>
+          7.1
+          %
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    class="card beer-item"
+    data-testid="beerItem"
+  >
+    <div
+      class="card-grid-img"
+    >
+      <img
+        alt="Beer"
+        src="https://images.punkapi.com/v2/124.png"
+      />
+    </div>
+    <div
+      class="card-grid-body"
+    >
+      <p
+        class="card-grid-name"
+      >
+        Test beer
+      </p>
+      <p
+        class="card-grid-description"
+      >
+        Test beer desc
+      </p>
+      <p
+        class="card-grid-tagline"
+      >
+        Test beer tagline
+        <span>
+          10/2008
+        </span>
+        <span>
+          4.1
+          %
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders beers component with no beers found 1`] = `
+<h3
+  data-testid="noResults"
+>
+  No beers found for "
+  test
+  "
+</h3>
+`;

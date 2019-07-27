@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loads random beer card 1`] = `
+<div
+  class="card"
+  data-testid="randomBeerCard"
+>
+  <h4
+    class="card-title"
+  >
+    Chaos Theory
+  </h4>
+  <div
+    class="card-grid"
+  >
+    <div
+      class="card-grid-img"
+    >
+      <img
+        alt="Beer"
+        src="https://images.punkapi.com/v2/124.png"
+      />
+    </div>
+    <div
+      class="card-grid-body"
+    >
+      <p
+        class="card-grid-description"
+      >
+        Chaos Theory is the most under- rated achievement of 20th Century science. This beer can only aspire to parallel to the mathematical use of the word chaos, which is at odds to the common parlance. The purest showcase of the magnificent hop that is Nelson Sauvin; grapefruit, pineapple and caramel sing above the chaos of life.
+      </p>
+      <p
+        class="card-grid-tagline"
+      >
+        Predictably Random IPA.
+        <span>
+          10/2008
+        </span>
+        <span>
+          7.1
+          %
+        </span>
+      </p>
+    </div>
+    <div
+      class="card-grid-buttons"
+    >
+      <div
+        data-testid="anotherBeerBtn"
+      >
+        <button
+          class="btn"
+        >
+          Another Beer
+        </button>
+      </div>
+      <div
+        data-testid="nonAlcoBeerBtn"
+      >
+        <button
+          class="btn"
+        >
+          Rnadom non-alcoholic beer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
