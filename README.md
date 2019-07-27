@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live App [halting-celery.surge.sh/](halting-celery.surge.sh/)
+Live App [https://halting-celery.surge.sh/](https://halting-celery.surge.sh/)
 
 ## Available Scripts
 
